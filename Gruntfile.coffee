@@ -8,6 +8,19 @@ module.exports = (grunt) ->
           force: true
         src: 'este/**/*.{js,css}'
 
+    stylus:
+      options:
+        'include css': true
+        'compress': false
+      all:
+        files: [
+          expand: true
+          src: [
+            'este/**/*.styl'
+          ]
+          ext: '.css'
+        ]
+
     coffee:
       all:
         options:
@@ -90,9 +103,21 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-bump'
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-contrib-stylus'
   grunt.loadNpmTasks 'grunt-conventional-changelog'
   grunt.loadNpmTasks 'grunt-este'
   grunt.loadNpmTasks 'grunt-npm'
+
+  grunt.registerTask 'build', ->
+    grunt.task.run [
+      'clean'
+      'coffee'
+      'coffee2closure'
+      'esteTemplates'
+      'esteDeps'
+      'esteBuilder'
+      'stylus'
+    ]
 
   grunt.registerTask 'test', ->
     grunt.task.run [

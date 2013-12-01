@@ -1,0 +1,23 @@
+.e-dom-field-error {
+  border: solid 1px #f00;
+}
+@media screen and (orientation: portrait) {
+  .e-mobile body {
+    min-height: 420px;
+  }
+}
+@media screen and (orientation: landscape) {
+  .e-mobile body {
+    min-height: 300px;
+  }
+}
+.e-mobile * {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.e-app-screen-oneview .e-app-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}

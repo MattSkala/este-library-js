@@ -1,0 +1,101 @@
+.este-scrollbar {
+  position: relative;
+  overflow: hidden;
+}
+.este-scrollbar > .este-scrollbar-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  overflow-scrolling: touch;
+}
+html.e-ua-device-desktop .este-scrollbar > .este-scrollbar-content {
+  overflow: hidden;
+}
+html.e-ua-platform-mac.e-ua-engine-webkit .este-scrollbar > .este-scrollbar-content::-webkit-scrollbar {
+  visibility: hidden;
+}
+.este-scrollbar > .goog-slider-vertical,
+.este-scrollbar > .goog-slider-horizontal {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s, width 0.2s, height 0.2s;
+  transition-delay: 0, 0.2s, 0.2s;
+  transition-timing-function: ease-out;
+}
+.este-scrollbar > .goog-slider-vertical.este-scrollbar-shown,
+.este-scrollbar > .goog-slider-horizontal.este-scrollbar-shown {
+  opacity: 1;
+  transition: opacity 0, width 0.2s, height 0.2s;
+}
+.este-scrollbar > .goog-slider-vertical.este-scrollbar-shown-bg:before,
+.este-scrollbar > .goog-slider-horizontal.este-scrollbar-shown-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.este-scrollbar > .goog-slider-vertical.este-scrollbar-shown-bg.goog-slider-vertical,
+.este-scrollbar > .goog-slider-horizontal.este-scrollbar-shown-bg.goog-slider-vertical {
+  border-left: solid 1px rgba(0,0,0,0.1);
+}
+.este-scrollbar > .goog-slider-vertical.este-scrollbar-shown-bg.goog-slider-horizontal,
+.este-scrollbar > .goog-slider-horizontal.este-scrollbar-shown-bg.goog-slider-horizontal {
+  border-top: solid 1px rgba(0,0,0,0.1);
+}
+.este-scrollbar > .goog-slider-vertical:focus,
+.este-scrollbar > .goog-slider-horizontal:focus {
+  outline: none;
+}
+.este-scrollbar > .goog-slider-vertical > .goog-slider-thumb,
+.este-scrollbar > .goog-slider-horizontal > .goog-slider-thumb {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.este-scrollbar > .goog-slider-vertical > .goog-slider-thumb:after,
+.este-scrollbar > .goog-slider-horizontal > .goog-slider-thumb:after {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-color: #000;
+  border-radius: 7px;
+  content: "";
+}
+.este-scrollbar > .goog-slider-vertical {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 11px;
+}
+.este-scrollbar > .goog-slider-vertical.este-scrollbar-shown-bg {
+  width: 15px;
+}
+.este-scrollbar > .goog-slider-vertical > .goog-slider-thumb {
+  left: 0;
+  width: 100%;
+  min-height: 28px;
+}
+.este-scrollbar > .goog-slider-horizontal {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 11px;
+}
+.este-scrollbar > .goog-slider-horizontal.este-scrollbar-shown-bg {
+  height: 15px;
+}
+.este-scrollbar > .goog-slider-horizontal > .goog-slider-thumb {
+  top: 0;
+  height: 100%;
+  min-width: 28px;
+}

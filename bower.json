@@ -1,5 +1,5 @@
 {
-  "name": "este-library",
+  "name": "este-library-js",
   "version": "5.1.14",
   "dependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",

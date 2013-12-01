@@ -1,5 +1,5 @@
 {
-  "name": "este-library",
+  "name": "este-library-js",
   "version": "5.1.14",
   "description": "Library for github.com/steida/este.git",
   "author": "Daniel Steigerwald <daniel@steigerwald.cz>",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/steida/este-library.git"
+    "url": "https://github.com/MattSkala/este-library-js.git"
   },
   "dependencies": {},
   "devDependencies": {

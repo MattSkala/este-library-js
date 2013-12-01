@@ -1,7 +1,7 @@
 {
   "name": "este-library-js",
   "version": "5.1.14",
-  "dependencies": {
+  "devDependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",
     "closure-library": "git://github.com/steida/google-closure-library.git",
     "closure-templates": "http://closure-templates.googlecode.com/files/closure-templates-for-javascript-latest.zip",

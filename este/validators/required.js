@@ -43,11 +43,12 @@ este.validators.Required.prototype.validate = function() {
   @override
 */
 este.validators.Required.prototype.getMsg = function() {
-  
+
 /**
     @desc Required validator message.
   */
-  return este.validators.Required.MSG_VALIDATOR_REQUIRED = goog.getMsg('This field is required.');
+  este.validators.Required.MSG_VALIDATOR_REQUIRED = goog.getMsg('This field is required.');
+  return este.validators.Required.MSG_VALIDATOR_REQUIRED;
 };
 
 /**

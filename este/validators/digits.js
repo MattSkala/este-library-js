@@ -28,11 +28,12 @@ este.validators.Digits.prototype.validate = function() {
   @override
 */
 este.validators.Digits.prototype.getMsg = function() {
-  
+
 /**
     @desc Digits validator message.
   */
-  return este.validators.Digits.MSG_VALIDATOR_DIGITS = goog.getMsg('Please enter only digits.');
+  este.validators.Digits.MSG_VALIDATOR_DIGITS = goog.getMsg('Please enter only digits.');
+  return este.validators.Digits.MSG_VALIDATOR_DIGITS;
 };
 
 /**

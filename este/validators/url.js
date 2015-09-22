@@ -30,11 +30,12 @@ este.validators.Url.prototype.validate = function() {
   @override
 */
 este.validators.Url.prototype.getMsg = function() {
-  
+
 /**
     @desc Url validator message.
   */
-  return este.validators.Url.MSG_VALIDATOR_URL = goog.getMsg('Please enter a valid URL.');
+  este.validators.Url.MSG_VALIDATOR_URL = goog.getMsg('Please enter a valid URL.');
+  return este.validators.Url.MSG_VALIDATOR_URL;
 };
 
 /**

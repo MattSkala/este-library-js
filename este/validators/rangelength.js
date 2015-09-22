@@ -47,14 +47,15 @@ este.validators.RangeLength.prototype.validate = function() {
   @override
 */
 este.validators.RangeLength.prototype.getMsg = function() {
-  
+
 /**
     @desc RangeLength validator message.
   */
-  return este.validators.RangeLength.MSG_VALIDATOR_RANGE_LENGTH = goog.getMsg('Please enter a value between {$min} and {$max} characters long.', {
+  este.validators.RangeLength.MSG_VALIDATOR_RANGE_LENGTH = goog.getMsg('Please enter a value between {$min} and {$max} characters long.', {
     'min': this.min,
     'max': this.max
   });
+  return este.validators.RangeLength.MSG_VALIDATOR_RANGE_LENGTH;
 };
 
 /**

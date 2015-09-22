@@ -36,13 +36,14 @@ este.validators.MaxLength.prototype.validate = function() {
   @override
 */
 este.validators.MaxLength.prototype.getMsg = function() {
-  
+
 /**
     @desc MaxLength validator message.
   */
-  return este.validators.MaxLength.MSG_VALIDATOR_MAX_LENGTH = goog.getMsg('Please enter no more than {$maxLength} characters.', {
+  este.validators.MaxLength.MSG_VALIDATOR_MAX_LENGTH = goog.getMsg('Please enter no more than {$maxLength} characters.', {
     'maxLength': this.maxLength
   });
+  return este.validators.MaxLength.MSG_VALIDATOR_MAX_LENGTH;
 };
 
 /**

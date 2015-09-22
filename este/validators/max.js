@@ -48,13 +48,14 @@ este.validators.Max.prototype.validate = function() {
   @override
 */
 este.validators.Max.prototype.getMsg = function() {
-  
+
 /**
     @desc Max validator message.
   */
-  return este.validators.Max.MSG_VALIDATOR_MAX = goog.getMsg('Please enter a value less than or equal to {$max}.', {
+  este.validators.Max.MSG_VALIDATOR_MAX = goog.getMsg('Please enter a value less than or equal to {$max}.', {
     'max': this.max
   });
+  return este.validators.Max.MSG_VALIDATOR_MAX;
 };
 
 /**

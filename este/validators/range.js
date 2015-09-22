@@ -56,14 +56,15 @@ este.validators.Range.prototype.validate = function() {
   @override
 */
 este.validators.Range.prototype.getMsg = function() {
-  
+
 /**
     @desc Range validator message.
   */
-  return este.validators.Range.MSG_VALIDATOR_RANGE = goog.getMsg('Please enter a value between {$min} and {$max}.', {
+  este.validators.Range.MSG_VALIDATOR_RANGE = goog.getMsg('Please enter a value between {$min} and {$max}.', {
     'min': this.min,
     'max': this.max
   });
+  return este.validators.Range.MSG_VALIDATOR_RANGE;
 };
 
 /**

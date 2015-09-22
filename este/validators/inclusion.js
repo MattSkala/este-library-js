@@ -37,13 +37,14 @@ este.validators.Inclusion.prototype.validate = function() {
   @override
 */
 este.validators.Inclusion.prototype.getMsg = function() {
-  
+
 /**
     @desc Inclusion validator message.
   */
-  return este.validators.Inclusion.MSG_VALIDATOR_INCLUSION = goog.getMsg('Please enter one of these values: {$inclusion}.', {
+  este.validators.Inclusion.MSG_VALIDATOR_INCLUSION = goog.getMsg('Please enter one of these values: {$inclusion}.', {
     'inclusion': this.inclusion.join(', ')
   });
+  return este.validators.Inclusion.MSG_VALIDATOR_INCLUSION;
 };
 
 /**

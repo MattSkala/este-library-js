@@ -36,11 +36,12 @@ este.validators.Format.prototype.validate = function() {
   @override
 */
 este.validators.Format.prototype.getMsg = function() {
-  
+
 /**
     @desc Format validator message.
   */
-  return este.validators.Format.MSG_VALIDATOR_FORMAT = goog.getMsg('Please enter a value in correct format.');
+  este.validators.Format.MSG_VALIDATOR_FORMAT = goog.getMsg('Please enter a value in correct format.');
+  return este.validators.Format.MSG_VALIDATOR_FORMAT;
 };
 
 /**

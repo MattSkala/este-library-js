@@ -29,11 +29,12 @@ este.validators.Email.prototype.validate = function() {
   @override
 */
 este.validators.Email.prototype.getMsg = function() {
-  
+
 /**
     @desc Email validator message.
   */
-  return este.validators.Email.MSG_VALIDATOR_EMAIL = goog.getMsg('Please enter a valid email address.');
+  este.validators.Email.MSG_VALIDATOR_EMAIL = goog.getMsg('Please enter a valid email address.');
+  return este.validators.Email.MSG_VALIDATOR_EMAIL;
 };
 
 /**

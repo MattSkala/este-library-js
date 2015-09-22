@@ -31,11 +31,12 @@ este.validators.Number.prototype.validate = function() {
   @override
 */
 este.validators.Number.prototype.getMsg = function() {
-  
+
 /**
     @desc Number validator message.
   */
-  return este.validators.Number.MSG_VALIDATOR_NUMBER = goog.getMsg('Please enter a valid number.');
+  este.validators.Number.MSG_VALIDATOR_NUMBER = goog.getMsg('Please enter a valid number.');
+  return este.validators.Number.MSG_VALIDATOR_NUMBER;
 };
 
 /**

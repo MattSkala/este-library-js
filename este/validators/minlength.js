@@ -36,13 +36,14 @@ este.validators.MinLength.prototype.validate = function() {
   @override
 */
 este.validators.MinLength.prototype.getMsg = function() {
-  
+
 /**
     @desc MinLength validator message.
   */
-  return este.validators.MinLength.MSG_VALIDATOR_MIN_LENGTH = goog.getMsg('Please enter at least {$minLength} characters.', {
+  este.validators.MinLength.MSG_VALIDATOR_MIN_LENGTH = goog.getMsg('Please enter at least {$minLength} characters.', {
     'minLength': this.minLength
   });
+  return este.validators.MinLength.MSG_VALIDATOR_MIN_LENGTH;
 };
 
 /**

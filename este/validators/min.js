@@ -48,13 +48,14 @@ este.validators.Min.prototype.validate = function() {
   @override
 */
 este.validators.Min.prototype.getMsg = function() {
-  
+
 /**
     @desc Min validator message.
   */
-  return este.validators.Min.MSG_VALIDATOR_MIN = goog.getMsg('Please enter a value greater than or equal to {$min}.', {
+  este.validators.Min.MSG_VALIDATOR_MIN = goog.getMsg('Please enter a value greater than or equal to {$min}.', {
     'min': this.min
   });
+  return este.validators.Min.MSG_VALIDATOR_MIN;
 };
 
 /**

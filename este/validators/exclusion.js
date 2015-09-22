@@ -37,13 +37,14 @@ este.validators.Exclusion.prototype.validate = function() {
   @override
 */
 este.validators.Exclusion.prototype.getMsg = function() {
-  
+
 /**
     @desc Exclusion validator message.
   */
-  return este.validators.Exclusion.MSG_VALIDATOR_EXCLUSION = goog.getMsg('\'{$value}\' is not allowed.', {
+  este.validators.Exclusion.MSG_VALIDATOR_EXCLUSION = goog.getMsg('\'{$value}\' is not allowed.', {
     'value': this.value
   });
+  return este.validators.Exclusion.MSG_VALIDATOR_EXCLUSION;
 };
 
 /**
